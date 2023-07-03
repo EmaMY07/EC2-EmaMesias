@@ -1,4 +1,4 @@
-@subdominio = https://ec2-emamesias
+@subdominio=ec2-emamesias
 
 ##############################
 # Requests SIN base de datos #
@@ -37,7 +37,7 @@ GET https://{{subdominio}}.onrender.com/api/curso/listar HTTP/1.1
 POST https://{{subdominio}}.onrender.com/api/curso/nuevo HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
-nombre=ema
+nombre=DSW1
 &creditos=2
 
 ###
@@ -45,4 +45,4 @@ nombre=ema
 DELETE https://{{subdominio}}.onrender.com/api/curso/eliminar HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
-id=1
+id=4
