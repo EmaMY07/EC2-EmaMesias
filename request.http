@@ -32,8 +32,11 @@ GET https://{{subdominio}}.onrender.com/idat/nombre-completo
 
 #GET https://{{subdominio}}.onrender.com/carreras?size=2&page=0&sort=id,desc HTTP/1.1
 
-#GET https://{{subdominio}}.onrender.com/carreras/3/cursos HTTP/1.1
-GET https://{{subdominio}}.onrender.com/cursos/159/carrera HTTP/1.1
+#GET https://{{subdominio}}.onrender.com/carreras/2/cursos HTTP/1.1
+#GET https://{{subdominio}}.onrender.com/cursos/159/carrera HTTP/1.1
+
+GET https://{{subdominio}}.onrender.com/carreras/search/findByNombre?nombre=Administracion HTTP/1.1
+
 
 ###
 # 4: Listar cursos

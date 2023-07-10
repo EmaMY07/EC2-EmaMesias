@@ -7,5 +7,5 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 @RepositoryRestResource(collectionResourceRel = "carreras",path = "carreras")
 public interface CarreraRepository extends CrudRepository<Carrera,Integer>,PagingAndSortingRepository<Carrera,Integer>{
-    List<Curso>findByNombre(@Param("nombre") String nombre);
+    List<Carrera>findByNombre(@Param("nombre") String nombre);
 }
