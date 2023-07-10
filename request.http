@@ -1,4 +1,5 @@
 @subdominio=ec2-emamesias
+@local=emamy07-fluffy-garbanzo-r944pq7p6jw2xx6j-8080.preview.app.github.dev
 ##############################
 # Requests SIN base de datos #
 ##############################
@@ -25,9 +26,15 @@ GET https://{{subdominio}}.onrender.com/idat/nombre-completo
 #   - nombre: string                         #
 #   - creditos: int                          #
 ##############################################
-GET https://{{subdominio}}/cursos/search/findByNombre?nombre=Python HTTP/1.1
+#GET https://{{subdominio}}.onrender.com/cursos/search/findByNombre?nombre=Java HTTP/1.1
 
-GET https://{{subdominio}}/cursos?size=2&page=1&sort=creditos,desc HTTP/1.1
+#GET https://{{subdominio}}.onrender.com/cursos?size=2&page=1&sort=creditos,desc HTTP/1.1
+
+#GET https://{{subdominio}}.onrender.com/carreras?size=2&page=0&sort=id,desc HTTP/1.1
+
+#GET https://{{subdominio}}.onrender.com/carreras/3/cursos HTTP/1.1
+GET https://{{subdominio}}.onrender.com/cursos/159/carrera HTTP/1.1
+
 ###
 # 4: Listar cursos
 GET https://{{subdominio}}.onrender.com/api/curso/listar HTTP/1.1
