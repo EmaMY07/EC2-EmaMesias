@@ -1,5 +1,4 @@
 @subdominio=ec2-emamesias
-
 ##############################
 # Requests SIN base de datos #
 ##############################
@@ -26,8 +25,9 @@ GET https://{{subdominio}}.onrender.com/idat/nombre-completo
 #   - nombre: string                         #
 #   - creditos: int                          #
 ##############################################
+GET https://{{subdominio}}/cursos/search/findByNombre?nombre=Python HTTP/1.1
 
-
+GET https://{{subdominio}}/cursos?size=2&page=1&sort=creditos,desc HTTP/1.1
 ###
 # 4: Listar cursos
 GET https://{{subdominio}}.onrender.com/api/curso/listar HTTP/1.1
@@ -37,12 +37,14 @@ GET https://{{subdominio}}.onrender.com/api/curso/listar HTTP/1.1
 POST https://{{subdominio}}.onrender.com/api/curso/nuevo HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
-nombre=DSW1
-&creditos=2
+nombre=Aplicaciones Moviles
+&creditos=8
 
 ###
 # 6: Eliminar Curso
 DELETE https://{{subdominio}}.onrender.com/api/curso/eliminar HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
-id=4
+id=157
+
+
